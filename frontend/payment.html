@@ -1,0 +1,29 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment - Movie Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="payment">
+    <h1>Payment Details</h1>
+    <form id="paymentForm">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" placeholder="Enter Card Number" required />
+      
+      <label for="expiryDate">Expiry Date</label>
+      <input type="text" id="expiryDate" placeholder="MM/YY" required />
+      
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" placeholder="Enter CVV" required />
+      
+      <button type="submit">Confirm Payment</button>
+    </form>
+    <button id="backToSeats" onclick="window.location.href = 'seatSelection.html'">Back to Seats</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
